@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Google Fonts: JetBrains Mono（本文）+ Oswald（ロゴ） */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap');
+
+/* ボックスモデルの統一 */
+* { box-sizing: border-box; }
+
+/* ボディの基本設定（ダークテーマ） */
+body {
+  margin: 0;
+  background: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'JetBrains Mono', 'SF Mono', 'Consolas', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ルート要素（フルスクリーン） */
+#root {
+  height: 100vh;
+  width: 100vw;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "checker-agent-runtime",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx app.ts"
+  },
+  "dependencies": {
+    "@strands-agents/sdk": "^0.2.2",
+    "bedrock-agentcore": "^0.2.0",
+    "tsx": "^4.7.2",
+    "zod": "^4.1.12"
+  }
+}
