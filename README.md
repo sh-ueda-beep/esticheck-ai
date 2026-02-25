@@ -1,12 +1,14 @@
-# EstiCheck AI
+# EstiCheck AI — 見積 AI チェッカー
 
-経費精算書をAIでチェックするWebアプリ。AWS Amplify Gen2 + Bedrock AgentCore を使ったフルスタック・フルサーバーレス構成。
+契約見積Excelファイル（.xlsx）をアップロードすると、AIエージェントが構造解析・エラー検出・品質スコアリングを自動的に行うWebアプリ。AWS Amplify Gen2 + Bedrock AgentCore を使ったフルスタック・フルサーバーレス構成。
+
+![画面イメージ](docs/assets/main.png)
 
 ### 特徴
 
 - フルサーバーレスなので維持費激安。ほぼLLMのAPI料金のみで運用できます。
 - エンプラReadyなセキュリティ。Cognito認証付き、東京リージョン対応。WAFでIP制限もできます。
-- Excelの経費精算書をアップロードすると、AIエージェントが規定違反や計算ミスを自動チェック。
+- Excelの契約見積書をアップロードするだけで、AIエージェントが構造解析・エラー検出・品質スコアリングを自動実行。
 
 ### アーキテクチャ
 
