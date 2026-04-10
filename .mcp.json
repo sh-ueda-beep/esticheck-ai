@@ -29,6 +29,18 @@
             },
             "disabled": false,
             "autoApprove": []
+        },
+        "awslabs.aws-iac-mcp-server": {
+            "command": "uvx",
+            "args": [
+                "awslabs.aws-iac-mcp-server@latest"
+            ],
+            "env": {
+                "AWS_PROFILE": "your-named-profile",
+                "FASTMCP_LOG_LEVEL": "ERROR"
+            },
+            "disabled": false,
+            "autoApprove": []
         }
     }
 }

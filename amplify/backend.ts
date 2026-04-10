@@ -8,6 +8,13 @@ const backend = defineBackend({
   auth,
 });
 
+// 自己サインアップ無効化 + ゲストアクセス無効化
+const { cfnUserPool, cfnIdentityPool } = backend.auth.resources.cfnResources;
+cfnUserPool.adminCreateUserConfig = {
+  allowAdminCreateUserOnly: true,
+};
+cfnIdentityPool.allowUnauthenticatedIdentities = false;
+
 // SCP準拠のためスタック全体にタグを付与
 Tags.of(backend.stack).add('Project', 'amplify-agentcore');
 Tags.of(backend.stack).add('Environment', 'production');

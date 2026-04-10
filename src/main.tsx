@@ -20,7 +20,7 @@ I18n.setLanguage('ja');
 // アプリケーションのエントリーポイント
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Authenticator>
+    <Authenticator hideSignUp>
       <BrowserRouter>
         <Routes>
           <Route path="/checker" element={<CheckerApp />} />
